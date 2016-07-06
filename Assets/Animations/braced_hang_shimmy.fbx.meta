@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 0d427e14360ae4cb5840da8c0c552968
-timeCreated: 1467751451
+guid: e4604695ffc4c43928c53924f463a3cc
+timeCreated: 1467832735
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Glasses
-    100002: //RootNode
+    100000: //RootNode
+    100002: Glasses
     100004: Justin:Head
     100006: Justin:HeadTop_End
     100008: Justin:Hips
@@ -98,8 +98,8 @@ ModelImporter:
     100180: Justin:TongueBack
     100182: Justin:TongueTip
     100184: Toon_Geo
-    400000: Glasses
-    400002: //RootNode
+    400000: //RootNode
+    400002: Glasses
     400004: Justin:Head
     400006: Justin:HeadTop_End
     400008: Justin:Hips
@@ -192,7 +192,7 @@ ModelImporter:
     400182: Justin:TongueTip
     400184: Toon_Geo
     4300000: Toon_Geo
-    7400000: ClimbingIdle
+    7400000: ClimbRight
     9500000: //RootNode
     13700000: Toon_Geo
   materials:
@@ -220,21 +220,21 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: ClimbingIdle
+      name: ClimbRight
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 70
+      lastFrame: 35
       wrapMode: 0
-      orientationOffsetY: 0
+      orientationOffsetY: -3.2
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
@@ -247,7 +247,7 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Glasses
-        weight: 0
+        weight: 1
       - path: Justin:Hips
         weight: 1
       - path: Justin:Hips/Justin:LeftUpLeg
@@ -259,7 +259,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:LeftUpLeg/Justin:LeftLeg/Justin:LeftFoot/Justin:LeftToeBase
         weight: 1
       - path: Justin:Hips/Justin:LeftUpLeg/Justin:LeftLeg/Justin:LeftFoot/Justin:LeftToeBase/Justin:LeftFootToeBase_End
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:RightUpLeg
         weight: 1
       - path: Justin:Hips/Justin:RightUpLeg/Justin:RightLeg
@@ -269,7 +269,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:RightUpLeg/Justin:RightLeg/Justin:RightFoot/Justin:RightToeBase
         weight: 1
       - path: Justin:Hips/Justin:RightUpLeg/Justin:RightLeg/Justin:RightFoot/Justin:RightToeBase/Justin:RightFootToeBase_End
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1
@@ -291,7 +291,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandIndex1/Justin:LeftHandIndex2/Justin:LeftHandIndex3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandIndex1/Justin:LeftHandIndex2/Justin:LeftHandIndex3/Justin:LeftHandIndex4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandMiddle1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandMiddle1/Justin:LeftHandMiddle2
@@ -299,7 +299,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandMiddle1/Justin:LeftHandMiddle2/Justin:LeftHandMiddle3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandMiddle1/Justin:LeftHandMiddle2/Justin:LeftHandMiddle3/Justin:LeftHandMiddle4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandPinky1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandPinky1/Justin:LeftHandPinky2
@@ -307,7 +307,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandPinky1/Justin:LeftHandPinky2/Justin:LeftHandPinky3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandPinky1/Justin:LeftHandPinky2/Justin:LeftHandPinky3/Justin:LeftHandPinky4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandRing1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandRing1/Justin:LeftHandRing2
@@ -315,7 +315,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandRing1/Justin:LeftHandRing2/Justin:LeftHandRing3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandRing1/Justin:LeftHandRing2/Justin:LeftHandRing3/Justin:LeftHandRing4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandThumb1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandThumb1/Justin:LeftHandThumb2
@@ -323,7 +323,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandThumb1/Justin:LeftHandThumb2/Justin:LeftHandThumb3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:LeftShoulder/Justin:LeftArm/Justin:LeftForeArm/Justin:LeftHand/Justin:LeftHandThumb1/Justin:LeftHandThumb2/Justin:LeftHandThumb3/Justin:LeftHandThumb4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1
@@ -331,55 +331,55 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:HeadTop_End
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:JawEND
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:LeftLipCorner
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:LeftLipLower
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:RightLipCorner
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:RightLipLower
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:TongueBack
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:Jaw/Justin:TongueTip
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftCheek
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftEye
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftEyelidLower
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftEyelidUpper
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftInnerBrow
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftIOuterBrow
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftLipUpper
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:LeftNostril
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightCheek
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightEye
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightEyelidLower
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightEyelidUpper
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightInnerBrow
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightIOuterBrow
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightLipUpper
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:Neck/Justin:Neck1/Justin:Head/Justin:RightNostril
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm
@@ -395,7 +395,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandIndex1/Justin:RightHandIndex2/Justin:RightHandIndex3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandIndex1/Justin:RightHandIndex2/Justin:RightHandIndex3/Justin:RightHandIndex4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandMiddle1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandMiddle1/Justin:RightHandMiddle2
@@ -403,7 +403,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandMiddle1/Justin:RightHandMiddle2/Justin:RightHandMiddle3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandMiddle1/Justin:RightHandMiddle2/Justin:RightHandMiddle3/Justin:RightHandMiddle4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandPinky1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandPinky1/Justin:RightHandPinky2
@@ -411,7 +411,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandPinky1/Justin:RightHandPinky2/Justin:RightHandPinky3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandPinky1/Justin:RightHandPinky2/Justin:RightHandPinky3/Justin:RightHandPinky4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandRing1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandRing1/Justin:RightHandRing2
@@ -419,7 +419,7 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandRing1/Justin:RightHandRing2/Justin:RightHandRing3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandRing1/Justin:RightHandRing2/Justin:RightHandRing3/Justin:RightHandRing4
-        weight: 0
+        weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandThumb1
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandThumb1/Justin:RightHandThumb2
@@ -427,9 +427,9 @@ ModelImporter:
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandThumb1/Justin:RightHandThumb2/Justin:RightHandThumb3
         weight: 1
       - path: Justin:Hips/Justin:Spine/Justin:Spine1/Justin:Spine2/Justin:RightShoulder/Justin:RightArm/Justin:RightForeArm/Justin:RightHand/Justin:RightHandThumb1/Justin:RightHandThumb2/Justin:RightHandThumb3/Justin:RightHandThumb4
-        weight: 0
+        weight: 1
       - path: Toon_Geo
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -892,7 +892,7 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: hanging_idle(Clone)
+    - name: braced_hang_shimmy(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -908,42 +908,42 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:Hips
-      position: {x: -0.0041131554, y: 0.9917973, z: -0.030409306}
-      rotation: {x: 0, y: 0.000000008731148, z: 0, w: 1}
+      position: {x: -0.004113155, y: 0.99179727, z: -0.030409358}
+      rotation: {x: 0, y: 0, z: -0.0000000014551913, w: 1}
       scale: {x: 1.0000002, y: 1, z: 1}
       transformModified: 1
     - name: Justin:Spine
       position: {x: 2.646978e-25, y: 0.092263184, z: 0.015771331}
-      rotation: {x: 0, y: -0.000000008731148, z: -0, w: 1}
-      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      rotation: {x: 0.000000011641532, y: -0.000000005820767, z: 0.0000000014551914,
+        w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:Spine1
       position: {x: -0, y: 0.16254029, z: -0.0016560555}
-      rotation: {x: 5.2939564e-19, y: 0.000000005820767, z: 2.2737371e-11, w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      rotation: {x: -0.000000011914381, y: 8.891049e-16, z: 7.9580745e-11, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
       transformModified: 1
     - name: Justin:Spine2
       position: {x: -0, y: 0.13639648, z: -0.01292305}
-      rotation: {x: -1.2784904e-16, y: -0.000000017462298, z: 0.0000000072532202,
+      rotation: {x: 0.000000023555913, y: 0.000000011641531, z: -0.0000000044451554,
         w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
       transformModified: 1
     - name: Justin:Neck
       position: {x: -0, y: 0.13877441, z: -0.043541867}
-      rotation: {x: 0.000000005820766, y: 0.000000017462296, z: -0.0000000076397555,
+      rotation: {x: -0.000000023283064, y: -0.000000011641531, z: 0.000000004729372,
         w: 1}
-      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+      scale: {x: 1, y: 1, z: 0.9999999}
       transformModified: 1
     - name: Justin:Neck1
       position: {x: -0, y: 0.04340027, z: 0.009268952}
-      rotation: {x: 4.135903e-25, y: -2.0679515e-25, z: -5.551115e-17, w: 1}
-      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
+      rotation: {x: 1.6940659e-17, y: -6.1629712e-27, z: 5.551115e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
       transformModified: 1
     - name: Justin:Head
       position: {x: -1.0587912e-24, y: 0.04026611, z: 0.008585205}
-      rotation: {x: -0.000000017462298, y: 1.7636513e-15, z: -0.0000000010913941,
-        w: 1}
-      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+      rotation: {x: -0.000000011641532, y: 4.2351635e-18, z: 0.0000000010913939, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
       transformModified: 1
     - name: Justin:HeadTop_End
       position: {x: -5.1704583e-18, y: 0.24809258, z: 0.0012312889}
@@ -952,161 +952,161 @@ ModelImporter:
       transformModified: 1
     - name: Justin:LeftEye
       position: {x: -0.035717, y: 0.07657112, z: 0.1158223}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightEye
       position: {x: 0.035717, y: 0.07657112, z: 0.1158223}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:Jaw
       position: {x: 1.7347234e-20, y: 0.0010183202, z: 0.05370112}
-      rotation: {x: -0.0064445604, y: -0.0000000058394027, z: 0.0000000028728104,
-        w: 0.99997926}
-      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+      rotation: {x: -0.006444561, y: 0.0000000058206453, z: 3.751157e-11, w: 0.99997926}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:TongueBack
       position: {x: -1.7347234e-20, y: -0.011488908, z: 0.053158797}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:TongueTip
       position: {x: -1.7347234e-20, y: -0.021657567, z: 0.08141672}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:LeftLipLower
       position: {x: -0.014250817, y: -0.020261137, z: 0.09238595}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:JawEND
       position: {x: -1.7347234e-20, y: -0.0258115, z: 0.097850636}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:RightLipLower
       position: {x: 0.014250817, y: -0.020261137, z: 0.09238595}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:RightLipCorner
       position: {x: 0.038250327, y: -0.0051072924, z: 0.07085841}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:LeftLipCorner
       position: {x: -0.038250327, y: -0.0051072924, z: 0.07085841}
-      rotation: {x: 2.8272775e-25, y: 1.8388069e-16, z: 8.893914e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -3.2150184e-25, y: -2.220446e-16, z: 1.0959929e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
       transformModified: 1
     - name: Justin:LeftLipUpper
       position: {x: -0.014501322, y: -0.0061691594, z: 0.15276308}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftNostril
       position: {x: -0.021452079, y: 0.017141037, z: 0.15735856}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftCheek
       position: {x: -0.049222223, y: 0.03321964, z: 0.12919758}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftEyelidLower
       position: {x: -0.035717, y: 0.07657112, z: 0.1158223}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftEyelidUpper
       position: {x: -0.035717, y: 0.07657112, z: 0.1158223}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftInnerBrow
       position: {x: -0.018610438, y: 0.09678956, z: 0.14952411}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftIOuterBrow
       position: {x: -0.053020533, y: 0.09444366, z: 0.1346053}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightInnerBrow
       position: {x: 0.018610438, y: 0.09678956, z: 0.14952411}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightIOuterBrow
       position: {x: 0.053020533, y: 0.09444366, z: 0.1346053}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightEyelidUpper
       position: {x: 0.035717, y: 0.07657112, z: 0.1158223}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightEyelidLower
       position: {x: 0.035717, y: 0.07657112, z: 0.1158223}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightCheek
       position: {x: 0.049222223, y: 0.03321964, z: 0.12919758}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightNostril
       position: {x: 0.021452079, y: 0.017141037, z: 0.15735856}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightLipUpper
       position: {x: 0.014501322, y: -0.0061691594, z: 0.15276308}
-      rotation: {x: 8.271806e-25, y: 1.6543612e-24, z: -1.110223e-16, w: 1}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      rotation: {x: -2.4815418e-24, y: 4.9630837e-24, z: -4.440892e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftShoulder
       position: {x: -0.06144226, y: 0.10187011, z: -0.037932433}
-      rotation: {x: -0.000000005820766, y: 0.000000011641531, z: -0.000000010186341,
+      rotation: {x: -0.000000017462298, y: 0.0000000058207665, z: -0.0000000072759585,
         w: 1}
-      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999994}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
       transformModified: 1
     - name: Justin:LeftArm
       position: {x: -0.12319092, y: -0.01112976, z: -0.01793457}
-      rotation: {x: -0.000000005820766, y: -4.4045719e-16, z: 0.000000026193447, w: 1}
-      scale: {x: 0.99999964, y: 0.99999964, z: 1.0000004}
+      rotation: {x: -0.000000017462298, y: -0.000000011641533, z: 0.000000034924597,
+        w: 1}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1.0000001}
       transformModified: 1
     - name: Justin:LeftForeArm
       position: {x: -0.2768701, y: 0, z: 0}
-      rotation: {x: 0.000000008731149, y: -2.7105054e-16, z: -7.8886105e-25, w: 1}
-      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+      rotation: {x: 0.000000011641532, y: 0.0000000058207688, z: -0.0000000698492,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
       transformModified: 1
     - name: Justin:LeftHand
       position: {x: -0.27873778, y: 0, z: 0}
-      rotation: {x: 0.000000002910383, y: -0.0000000029103822, z: -0.00000002910383,
-        w: 1}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      rotation: {x: 5.663058e-16, y: -0.0000000036379795, z: 0.000000034924604, w: 1}
+      scale: {x: 0.9999998, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftHandThumb1
       position: {x: -0.023785133, y: -0.010028993, z: 0.026209358}
-      rotation: {x: -0.04343949, y: 0.028132759, z: -0.04149815, w: 0.9977973}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      rotation: {x: -0.04343975, y: 0.028132893, z: -0.041498456, w: 0.9977973}
+      scale: {x: 1.0000001, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftHandThumb2
       position: {x: -0.033623688, y: -0.010028992, z: 0.028397717}
-      rotation: {x: -0.024530908, y: 0.0819939, z: -0.00008826389, w: 0.9963309}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      rotation: {x: -0.024530338, y: 0.08199298, z: -0.00008777401, w: 0.99633104}
+      scale: {x: 1.0000001, y: 1, z: 1}
       transformModified: 1
     - name: Justin:LeftHandThumb3
       position: {x: -0.045017947, y: -0.013444998, z: 0.021782676}
-      rotation: {x: -0.007810635, y: 0.010882715, z: -0.009424991, w: 0.99986595}
-      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+      rotation: {x: -0.0078123244, y: 0.010884876, z: -0.00942716, w: 0.9998659}
+      scale: {x: 1, y: 1.0000002, z: 1}
       transformModified: 1
     - name: Justin:LeftHandThumb4
       position: {x: -0.025999999, y: -0.01, z: 0.01}
@@ -1115,20 +1115,20 @@ ModelImporter:
       transformModified: 1
     - name: Justin:LeftHandMiddle1
       position: {x: -0.10463907, y: 0.006147605, z: 0.0042978725}
-      rotation: {x: -0.000000005820767, y: -0.00000000873115, z: 0.000000017462298,
+      rotation: {x: -0.0000000072759585, y: -0.0000000021827875, z: 0.000000011641533,
         w: 1}
-      scale: {x: 0.99999976, y: 1.0000004, z: 0.9999999}
+      scale: {x: 1, y: 1.0000002, z: 1}
       transformModified: 1
     - name: Justin:LeftHandMiddle2
       position: {x: -0.057920903, y: 1.9411755e-25, z: 4.440892e-18}
-      rotation: {x: 0.000000011641532, y: 0.000000011641531, z: -0.000000011641532,
+      rotation: {x: 0.000000005820766, y: -0.0000000058207656, z: -0.000000005820765,
         w: 1}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
       transformModified: 1
     - name: Justin:LeftHandMiddle3
       position: {x: -0.03713173, y: -9.705878e-26, z: -2.220446e-18}
-      rotation: {x: 0, y: 8.881784e-16, z: -7.1936814e-17, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1}
+      rotation: {x: 2.220446e-16, y: 8.881784e-16, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
       transformModified: 1
     - name: Justin:LeftHandMiddle4
       position: {x: -0.022999998, y: 1.1368684e-15, z: 1.4791142e-33}
@@ -1137,20 +1137,19 @@ ModelImporter:
       transformModified: 1
     - name: Justin:LeftHandIndex1
       position: {x: -0.103945345, y: 0.0061476063, z: 0.027054923}
-      rotation: {x: 0.0000000072759585, y: 0.0000000029103822, z: -0.0000000058207643,
+      rotation: {x: -0.000000008731152, y: -0.0000000021827875, z: 0.000000023283064,
         w: 1}
-      scale: {x: 0.99999964, y: 1.0000002, z: 1}
+      scale: {x: 1, y: 1.0000002, z: 1}
       transformModified: 1
     - name: Justin:LeftHandIndex2
       position: {x: -0.055492897, y: -2.842171e-16, z: 4.440904e-18}
-      rotation: {x: -0.00000000873115, y: 0.000000002910383, z: 0.000000011641532,
-        w: 1}
-      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+      rotation: {x: 0.000000005820766, y: 6.3043646e-16, z: -0.000000011641532, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:LeftHandIndex3
       position: {x: -0.033911195, y: -5.684342e-16, z: -2.2204212e-18}
-      rotation: {x: 0.000000008731151, y: -0.000000008731147, z: -1.7072186e-15, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: -0.0000000014551897, y: -1.315327e-15, z: 6.661338e-16, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
       transformModified: 1
     - name: Justin:LeftHandIndex4
       position: {x: -0.024999999, y: 2.842171e-16, z: 1.4791142e-33}
@@ -1159,20 +1158,20 @@ ModelImporter:
       transformModified: 1
     - name: Justin:LeftHandRing1
       position: {x: -0.103251636, y: 0.0032113248, z: -0.01875542}
-      rotation: {x: 0.0000000014551919, y: -0.000000002910384, z: 0.00000002910383,
+      rotation: {x: -0.0000000014551936, y: 0.000000009458745, z: 0.000000023283064,
         w: 1}
-      scale: {x: 0.99999976, y: 1.0000004, z: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
       transformModified: 1
     - name: Justin:LeftHandRing2
       position: {x: -0.054452322, y: -2.842171e-16, z: 4.440904e-18}
-      rotation: {x: -0.00000000873115, y: 0.000000005820767, z: -0.000000034924597,
+      rotation: {x: 0.000000013096727, y: -0.000000011641533, z: -0.000000034924593,
         w: 1}
-      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:LeftHandRing3
       position: {x: -0.03713173, y: -2.9117633e-25, z: -6.661338e-18}
-      rotation: {x: -8.881784e-16, y: 8.4703295e-17, z: 6.162977e-25, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: -1.7763568e-15, y: -8.107119e-17, z: 9.437928e-25, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:LeftHandRing4
       position: {x: -0.02, y: -5.684342e-16, z: 1.4791142e-33}
@@ -1181,20 +1180,19 @@ ModelImporter:
       transformModified: 1
     - name: Justin:LeftHandPinky1
       position: {x: -0.10012992, y: -0.0007834791, z: -0.039671414}
-      rotation: {x: 5.929231e-17, y: 0.0000000029103822, z: 0.000000005820766, w: 1}
-      scale: {x: 0.9999995, y: 1.0000004, z: 0.9999999}
+      rotation: {x: -2.0262316e-15, y: 0.000000009458747, z: 0.000000005820766, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
       transformModified: 1
     - name: Justin:LeftHandPinky2
       position: {x: -0.03676256, y: 5.8235265e-25, z: 1.3322676e-17}
-      rotation: {x: 0.0000000036379793, y: -0.00000001164153, z: -0.000000005820765,
+      rotation: {x: 0.000000002182789, y: -0.000000011641535, z: 0.000000005820766,
         w: 1}
-      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:LeftHandPinky3
       position: {x: -0.028113425, y: -9.705878e-26, z: -2.220446e-18}
-      rotation: {x: -0.000000005820766, y: 0.000000011641531, z: 0.000000005820766,
-        w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: 9.096592e-24, y: -0.000000011641531, z: 0.0000000029103837, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:LeftHandPinky4
       position: {x: -0.029000001, y: 2.842171e-16, z: 1.4791142e-33}
@@ -1203,42 +1201,41 @@ ModelImporter:
       transformModified: 1
     - name: Justin:RightShoulder
       position: {x: 0.061401974, y: 0.10187011, z: -0.037932433}
-      rotation: {x: 0.000000017462298, y: -0.000000011641533, z: 0.000000016007107,
+      rotation: {x: -0.000000011641532, y: -0.000000017462298, z: 0.000000021827873,
         w: 1}
-      scale: {x: 0.99999976, y: 1.0000002, z: 1.0000001}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightArm
       position: {x: 0.123231195, y: -0.01112976, z: -0.01793457}
-      rotation: {x: -0.0000000058207577, y: 0.000000081490725, z: 0.00000004656613,
+      rotation: {x: -0.000000023283064, y: -0.00000004656613, z: -0.000000040745363,
         w: 1}
-      scale: {x: 1, y: 0.99999976, z: 1.0000002}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
       transformModified: 1
     - name: Justin:RightForeArm
       position: {x: 0.2768701, y: 0, z: 0}
-      rotation: {x: -0.00000000945875, y: -0.00000006039045, z: -0.00000006984919,
-        w: 1}
-      scale: {x: 1, y: 0.9999999, z: 1}
+      rotation: {x: 0.0000000029103817, y: 0.00000006184564, z: -1.2257854e-15, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightHand
       position: {x: 0.27873778, y: 0, z: 0}
-      rotation: {x: -0.000000008003556, y: 0.0000000018189894, z: 0.0000000058207648,
+      rotation: {x: 0.000000008731149, y: -0.0000000034560792, z: 0.000000026193447,
         w: 1}
-      scale: {x: 0.9999999, y: 1.0000002, z: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
       transformModified: 1
     - name: Justin:RightHandThumb1
       position: {x: 0.025177661, y: -0.00936667, z: 0.025136683}
-      rotation: {x: -0.04386524, y: -0.019023504, z: 0.041285366, w: 0.99800277}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      rotation: {x: -0.043865386, y: -0.019023398, z: 0.041285492, w: 0.99800277}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightHandThumb2
       position: {x: 0.032637868, y: -0.010869652, z: 0.0296688}
-      rotation: {x: -0.028151378, y: -0.09898957, z: -0.005297761, w: 0.99467605}
-      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999999}
+      rotation: {x: -0.028151449, y: -0.098989725, z: -0.005297798, w: 0.99467605}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightHandThumb3
       position: {x: 0.044165276, y: -0.0137026245, z: 0.021350233}
-      rotation: {x: -0.0059938086, y: -0.008891824, z: 0.0066920584, w: 0.9999201}
-      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+      rotation: {x: -0.0059928214, y: -0.008890398, z: 0.0066909147, w: 0.9999202}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
       transformModified: 1
     - name: Justin:RightHandThumb4
       position: {x: 0.025999999, y: -0.01, z: 0.01}
@@ -1247,20 +1244,20 @@ ModelImporter:
       transformModified: 1
     - name: Justin:RightHandIndex1
       position: {x: 0.10466505, y: 0.0048958063, z: 0.02711963}
-      rotation: {x: 0.000000001455192, y: -0.000000005456968, z: -0.000000029103832,
+      rotation: {x: -0.000000004365576, y: 0.0000000027284854, z: -0.0000000029103806,
         w: 1}
-      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightHandIndex2
       position: {x: 0.053767666, y: 3.847193e-11, z: 0}
-      rotation: {x: 0.000000010186341, y: 0.000000005820765, z: 0.000000034924597,
+      rotation: {x: 0.0000000130967255, y: -0.000000014551914, z: -0.0000000058207643,
         w: 1}
-      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999999}
+      scale: {x: 0.9999997, y: 1, z: 0.9999999}
       transformModified: 1
     - name: Justin:RightHandIndex3
       position: {x: 0.03385469, y: -9.705876e-26, z: -6.661338e-18}
-      rotation: {x: 2.220446e-15, y: 6.776261e-17, z: 1.7763568e-15, w: 1}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      rotation: {x: -8.881784e-16, y: 8.881784e-16, z: 6.617445e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Justin:RightHandIndex4
       position: {x: 0.025999999, y: 0, z: 0}
@@ -1269,20 +1266,20 @@ ModelImporter:
       transformModified: 1
     - name: Justin:RightHandMiddle1
       position: {x: 0.107596025, y: 0.0048958054, z: 0.004277988}
-      rotation: {x: 0.0000000058207656, y: 0.000000023646862, z: -0.000000052386895,
+      rotation: {x: 0.0000000029103813, y: -1.8189761e-10, z: -0.000000014551913,
         w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000004}
       transformModified: 1
     - name: Justin:RightHandMiddle2
       position: {x: 0.056167677, y: 3.8471646e-11, z: 0}
-      rotation: {x: -0.0000000087311465, y: -4.0657584e-16, z: 0.000000052386895,
+      rotation: {x: 0.000000005820765, y: -0.000000011641532, z: -0.0000000058207625,
         w: 1}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      scale: {x: 0.99999976, y: 1.0000002, z: 0.9999997}
       transformModified: 1
     - name: Justin:RightHandMiddle3
       position: {x: 0.03736354, y: 2.842171e-16, z: -3.330669e-18}
-      rotation: {x: -2.6645353e-15, y: 3.6395947e-23, z: -2.220446e-15, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: 1.7763567e-15, y: 1.7763568e-15, z: -1.7763568e-15, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
       transformModified: 1
     - name: Justin:RightHandMiddle4
       position: {x: 0.022999998, y: 5.684342e-16, z: -2.220446e-18}
@@ -1291,20 +1288,19 @@ ModelImporter:
       transformModified: 1
     - name: Justin:RightHandRing1
       position: {x: 0.10470213, y: 0.003878717, z: -0.019362805}
-      rotation: {x: 0.0000000058207665, y: 0.000000006184563, z: -0.000000017462298,
+      rotation: {x: -0.000000005820767, y: 0.000000011459637, z: -0.0000000029103806,
         w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
       transformModified: 1
     - name: Justin:RightHandRing2
       position: {x: 0.05401276, y: 3.8471646e-11, z: 0}
-      rotation: {x: -0.0000000058207643, y: -0.000000005820767, z: 0.000000011641532,
-        w: 1}
-      scale: {x: 1, y: 0.9999999, z: 1}
+      rotation: {x: 0.000000011641532, y: -0.000000011641538, z: 2.2882087e-15, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
       transformModified: 1
     - name: Justin:RightHandRing3
       position: {x: 0.033915963, y: 2.842171e-16, z: -2.220446e-18}
-      rotation: {x: -0.000000005820766, y: 1.992284e-23, z: -1.7113589e-15, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: 0.0000000058207643, y: -0.000000011641531, z: 1.7576001e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightHandRing4
       position: {x: 0.022, y: -2.842171e-16, z: 4.440892e-18}
@@ -1313,20 +1309,18 @@ ModelImporter:
       transformModified: 1
     - name: Justin:RightHandPinky1
       position: {x: 0.09971459, y: -0.001191439, z: -0.03954005}
-      rotation: {x: -0.0000000058207674, y: 3.6379835e-10, z: -0.000000029103832,
-        w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      rotation: {x: -1.988115e-15, y: 0.000000011459635, z: -0.0000000029103806, w: 1}
+      scale: {x: 1.0000004, y: 1, z: 1.0000004}
       transformModified: 1
     - name: Justin:RightHandPinky2
       position: {x: 0.03652758, y: 3.8471646e-11, z: 0}
-      rotation: {x: 0.000000001091394, y: 0.000000023283066, z: 0.000000017462295,
-        w: 1}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+      rotation: {x: -0.000000012732926, y: 8.881784e-16, z: -0.0000000014551895, w: 1}
+      scale: {x: 0.9999997, y: 1, z: 0.9999999}
       transformModified: 1
     - name: Justin:RightHandPinky3
       position: {x: 0.027820332, y: -5.684342e-16, z: -2.2204212e-18}
-      rotation: {x: 1.7763567e-15, y: -3.3087225e-23, z: 4.440892e-15, w: 1}
-      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      rotation: {x: -4.9630837e-24, y: 8.881784e-16, z: 3.330669e-16, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
       transformModified: 1
     - name: Justin:RightHandPinky4
       position: {x: 0.029000001, y: -2.842171e-16, z: 0}
@@ -1335,26 +1329,26 @@ ModelImporter:
       transformModified: 1
     - name: Justin:LeftUpLeg
       position: {x: -0.09633789, y: -0.032732543, z: -0.000000007152557}
-      rotation: {x: -0.000000023283064, y: -0.000000032014214, z: -0.000000011641532,
-        w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      rotation: {x: 7.623297e-17, y: -0.000000005820767, z: 0.0000000130967255, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
       transformModified: 1
     - name: Justin:LeftLeg
       position: {x: -0, y: -0.4173, z: -0.017299652}
-      rotation: {x: 0.00000004656613, y: 0.000000019463187, z: 0.000000016689228,
+      rotation: {x: 0.000000023283064, y: 0.0000000018189901, z: -0.000000007821656,
         w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000005}
       transformModified: 1
     - name: Justin:LeftFoot
       position: {x: -0.00012604713, y: -0.39189997, z: -0.008476867}
-      rotation: {x: -0.000000023283064, y: 0.0000000018189912, z: -0.0000000054114944,
+      rotation: {x: -0.000000023283064, y: 0.0000000021827866, z: -0.000000004092726,
         w: 1}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
       transformModified: 1
     - name: Justin:LeftToeBase
       position: {x: 0.0018328666, y: -0.12193085, z: 0.082822636}
-      rotation: {x: 1.0826137e-16, y: 0.000000004911271, z: -0.0000000010913941, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      rotation: {x: 0.000000023283064, y: 0.0000000032741816, z: -0.0000000011823431,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.99999976}
       transformModified: 1
     - name: Justin:LeftFootToeBase_End
       position: {x: -0, y: 8.673617e-21, z: 0.12699999}
@@ -1363,26 +1357,25 @@ ModelImporter:
       transformModified: 1
     - name: Justin:RightUpLeg
       position: {x: 0.09633789, y: -0.032732543, z: -0.000000007152557}
-      rotation: {x: -6.0986367e-16, y: -0.000000008731148, z: 0.00000006984919, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: 3.2017845e-15, y: 0.000000034924597, z: 0.00000004802132, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
       transformModified: 1
     - name: Justin:RightLeg
       position: {x: -0, y: -0.4173, z: -0.017299652}
-      rotation: {x: -0.0000000014551915, y: 0.0000000029103835, z: -0.000000013005767,
-        w: 1}
-      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+      rotation: {x: -4.0567584e-15, y: -0.000000040745363, z: -0.00000003101377, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightFoot
       position: {x: -0.00012606621, y: -0.39189997, z: -0.008476867}
-      rotation: {x: 0.0000000014551916, y: -0.0000000058207665, z: -0.000000056843426,
+      rotation: {x: 0.000000023283068, y: -0.0000000058207665, z: 0.000000004820322,
         w: 1}
-      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
       transformModified: 1
     - name: Justin:RightToeBase
       position: {x: 0.0018330956, y: -0.12193085, z: 0.082822636}
-      rotation: {x: 0.000000011641532, y: 0.000000029103834, z: 0.000000005820767,
+      rotation: {x: -0.000000011641536, y: 0.0000000014551905, z: -0.000000014551917,
         w: 1}
-      scale: {x: 1, y: 1, z: 0.9999998}
+      scale: {x: 1, y: 1.0000001, z: 0.9999998}
       transformModified: 1
     - name: Justin:RightFootToeBase_End
       position: {x: -0.00003194809, y: -1.7347234e-20, z: 0.12699999}

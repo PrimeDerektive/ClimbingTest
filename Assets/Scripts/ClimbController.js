@@ -1,17 +1,20 @@
 ﻿#pragma strict
 
 var climbRayOrigin : Transform;
+var climbRayDestination : Transform;
 var climbLayerMask : LayerMask;
 var targetPos : Transform;
 
 var climbing : boolean = false;
 var inTransition : boolean = false;
 
+var col : CapsuleCollider;
 var animator : Animator;
 var rb : Rigidbody;
 var moveScripts : MonoBehaviour[];
 
 function Start(){
+	if(!col) col = GetComponent.<CapsuleCollider>();
 	if(!animator) animator = GetComponent.<Animator>();
 	if(!rb) rb = GetComponent.<Rigidbody>();
 }
@@ -26,14 +29,6 @@ function FixedUpdate () {
 		var vertical = Input.GetAxis("Vertical");
 
 		if(horizontal != 0.0 || vertical != 0.0){
-
-			//correct for pivot offset. this was done by trial and error :)
-			horizontal *= 0.5;
-			if(vertical > 0.1)
-				vertical *= 2.0;
-			else
-				vertical *= 0.5;
-
 
 			//movement direction is on x and z axes
 			var moveDir = Vector3(horizontal, vertical, 0);
@@ -61,6 +56,21 @@ function FixedUpdate () {
 					}
 				}
 				else if(
+					Physics.Linecast(climbRayOrigin.position + climbRayOrigin.forward, -climbRayOrigin.up, hit, climbLayerMask) 
+				){
+					rb.velocity = Vector3.zero;
+					targetPos.position = hit.point + (hit.normal * 0.5);
+					//if(vertical < -0.1) targetPos.position.y -= 1.6;
+					targetPos.rotation = Quaternion.FromToRotation(targetPos.forward, -hit.normal) * targetPos.rotation;
+					if(Physics.Raycast(targetPos.position, targetPos.up, 1.6, climbLayerMask)){
+						Debug.DrawRay(targetPos.position, targetPos.up*1.6, Color.red);
+					}
+					else{
+						if(!Physics.Linecast(climbRayOrigin.position, climbRayOrigin.forward, climbLayerMask))
+							StartCoroutine(TransitionToTargetPos());
+					}
+				}
+				else if(
 					Physics.Linecast(climbRayOrigin.position, transform.position + transform.forward, hit, climbLayerMask) 
 				){
 					rb.useGravity = false;
@@ -70,6 +80,7 @@ function FixedUpdate () {
 					if(!animator.GetBool('Climbing')){
 						animator.SetBool('Climbing', true);
 					}
+					if(col.center.y != 0.0) col.center.y = 0.0;
 
 					var destination = hit.point + (hit.normal * 0.5);
 					targetPos.position = destination;
