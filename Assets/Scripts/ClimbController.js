@@ -19,7 +19,7 @@ function Start(){
 
 function FixedUpdate () {
 
-	if(Input.GetKey(KeyCode.P)){
+	if(Input.GetKey(KeyCode.Q)){
 
 		//capture input
 		var horizontal = Input.GetAxis("Horizontal"); 
@@ -93,7 +93,7 @@ function FixedUpdate () {
 
 	}
 
-	if(Input.GetKeyUp(KeyCode.P)){
+	if(Input.GetKeyUp(KeyCode.Q)){
 		rb.useGravity = true;
 		transform.up = Vector3.up;
 		for(var moveScript : MonoBehaviour in moveScripts){
