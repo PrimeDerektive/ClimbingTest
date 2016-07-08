@@ -104,7 +104,7 @@ function TransitionToTarget(){
     var startRot = transform.rotation;
     while (i < 1.0){
         i += Time.deltaTime * rate;
-        transform.position = Vector3.Lerp(startPos, climbTarget.position, i);
+        transform.position = Vector3.Slerp(startPos, climbTarget.position, i);
         transform.rotation = Quaternion.Slerp(startRot, climbTarget.rotation, i);
         yield; 
     }
