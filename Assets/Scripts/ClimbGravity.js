@@ -62,8 +62,8 @@ function FixedUpdate () {
 				rb.velocity = Vector3.zero;
 				climbTarget.position = hit.point + (hit.normal * 0.25);
 				climbTarget.rotation = Quaternion.FromToRotation(climbTarget.forward, -hit.normal) * climbTarget.rotation;
-				if(vertical < -0.1) climbTarget.position -= 0.5 * climbTarget.up; //downward transfer
-				else if(vertical > 0.1) climbTarget.position += 0.5 * climbTarget.up; //upward transfer
+				if(vertical < -0.1) climbTarget.position += 0.25 * climbTarget.up; //downward transfer
+				else if(vertical > 0.1) climbTarget.position -= 0.25 * climbTarget.up; //upward transfer
 				StartCoroutine(TransitionToTarget());	
 
 			}//regular climbing
