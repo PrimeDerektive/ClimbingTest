@@ -108,15 +108,17 @@ function FixedUpdate () {
 function LateUpdate(){
 
 	var leftFoot = anim.GetBoneTransform(HumanBodyBones.LeftFoot);
-	ikLeftFootRayOrigin.position = leftFoot.position - ikLeftFootRayOrigin.forward*0.1;
+	var offset : float = 0.1;
+	if(inTransition) offset = 0.15;
+	ikLeftFootRayOrigin.position = leftFoot.position - ikLeftFootRayOrigin.forward*offset;
 	var leftFootIkPos : Vector3 = Vector3.zero;
 	var hit : RaycastHit;
-	if(Physics.Raycast(ikLeftFootRayOrigin.position, ikLeftFootRayOrigin.forward, hit, 1.0, climbLayerMask)){
+	if(Physics.Raycast(ikLeftFootRayOrigin.position, ikLeftFootRayOrigin.forward, hit, 1.0, climbLayerMask) && !inTransition){
 		Debug.DrawRay(ikLeftFootRayOrigin.position,  ikLeftFootRayOrigin.forward, Color.green);
 		leftFootIkPos = hit.point + hit.normal * 0.17;
 	}
-	else if(Physics.Raycast(ikLeftFootRayOrigin.position, Quaternion.Euler(-45, 0, 0) * ikLeftFootRayOrigin.forward, hit, 1.0, climbLayerMask)){
-		Debug.DrawRay(ikLeftFootRayOrigin.position, Quaternion.Euler(-45, 0, 0) * ikLeftFootRayOrigin.forward, Color.red);
+	else if(Physics.Raycast(ikLeftFootRayOrigin.position, Quaternion.AngleAxis(45, Vector3.Cross(ikLeftFootRayOrigin.forward,Vector3.up)) * ikLeftFootRayOrigin.forward, hit, 1.0, climbLayerMask)){
+		Debug.DrawRay(ikLeftFootRayOrigin.position, Quaternion.AngleAxis(45, Vector3.Cross(ikLeftFootRayOrigin.forward,Vector3.up)) * ikLeftFootRayOrigin.forward, Color.red);
 		leftFootIkPos = hit.point + hit.normal * 0.17;
 	}
 	if(leftFootIkPos != Vector3.zero){
@@ -125,26 +127,27 @@ function LateUpdate(){
 	}
 
 	var rightFoot = anim.GetBoneTransform(HumanBodyBones.RightFoot);
-	ikRightFootRayOrigin.position = rightFoot.position - ikRightFootRayOrigin.forward*0.1;
+	ikRightFootRayOrigin.position = rightFoot.position - ikRightFootRayOrigin.forward*offset;
 	var rightFootIkPos : Vector3 = Vector3.zero;
-	if(Physics.Raycast(ikRightFootRayOrigin.position, ikRightFootRayOrigin.forward, hit, 1.0, climbLayerMask)){
+	if(Physics.Raycast(ikRightFootRayOrigin.position, ikRightFootRayOrigin.forward, hit, 1.0, climbLayerMask)  && !inTransition){
 		Debug.DrawRay(ikRightFootRayOrigin.position,  ikRightFootRayOrigin.forward, Color.green);
 		rightFootIkPos = hit.point + hit.normal * 0.17;
 	}
-	else if(Physics.Raycast(ikRightFootRayOrigin.position, Quaternion.Euler(-45, 0, 0) * ikRightFootRayOrigin.forward, hit, 1.0, climbLayerMask)){
-		Debug.DrawRay(ikRightFootRayOrigin.position, Quaternion.Euler(-45, 0, 0) * ikRightFootRayOrigin.forward, Color.red);
+	else if(Physics.Raycast(ikRightFootRayOrigin.position, Quaternion.AngleAxis(45, Vector3.Cross(ikRightFootRayOrigin.forward,Vector3.up)) * ikRightFootRayOrigin.forward, hit, 1.0, climbLayerMask)){
+		Debug.DrawRay(ikRightFootRayOrigin.position, Quaternion.AngleAxis(45, Vector3.Cross(ikRightFootRayOrigin.forward,Vector3.up)) * ikRightFootRayOrigin.forward, Color.red);
 		rightFootIkPos = hit.point + hit.normal * 0.17;
 	}
-
 	if(rightFootIkPos != Vector3.zero){
 		fbbik.solver.rightFootEffector.position = Vector3.Lerp(fbbik.solver.rightFootEffector.position, rightFootIkPos, Time.deltaTime*10.0);
 		fbbik.solver.rightFootEffector.positionWeight = 1;
 	}
 
 	if(inTransition){
-		fbbik.solver.bodyEffector.positionOffset += transform.rotation * Vector3(0, 0, -0.5);
+		fbbik.solver.bodyEffector.positionOffset += transform.rotation * Vector3(0, 0, -0.25);
+		//fbbik.solver.leftFootEffector.positionWeight = Mathf.Lerp(fbbik.solver.leftFootEffector.positionWeight, 0, Time.deltaTime * 10.0);
+		//fbbik.solver.rightFootEffector.positionWeight = Mathf.Lerp(fbbik.solver.rightFootEffector.positionWeight, 0, Time.deltaTime * 10.0);
 	}
-
+	/*
 	var leftHand = anim.GetBoneTransform(HumanBodyBones.LeftHand);
 	var dirToLeftHand = (leftHand.position - ikLeftHandRayOrigin.position).normalized;
 	var leftHandIkPos : Vector3 = Vector3.zero;
@@ -156,6 +159,7 @@ function LateUpdate(){
 		fbbik.solver.leftHandEffector.position = Vector3.Lerp(fbbik.solver.leftHandEffector.position, leftHandIkPos, Time.deltaTime*10.0);
 		fbbik.solver.leftHandEffector.positionWeight = 1;
 	}
+	*/
 
 }
 
@@ -182,9 +186,17 @@ function TransitionToTarget(){
     var rate = 1.0/1.0; // 1.0 / duration
     var startPos = transform.position;
     var startRot = transform.rotation;
+    var movePath : Vector3[] = new Vector3[2];
+     movePath[0] = climbSensor.position + climbSensor.forward*0.5;
+    movePath[1] = climbTarget.position;
+    iTween.MoveTo( gameObject, iTween.Hash(
+	     "path"    , movePath,
+	     "time"    , 1.0,
+	     "easeType", iTween.EaseType.linear
+	));
     while (i < 1.0){
         i += Time.deltaTime * rate;
-        transform.position = Vector3.Slerp(startPos, climbTarget.position, i);
+        //transform.position = Vector3.Slerp(startPos, climbTarget.position, i);
         transform.rotation = Quaternion.Slerp(startRot, climbTarget.rotation, i);
         yield; 
     }
